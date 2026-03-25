@@ -9,6 +9,7 @@ const defaultPatient = {
     tChol: 200,
     hdl: 45,
     sbp: 160,
+    egfr: 90,
     diabetes: true,
     smoker: false,
     usingAntihtn: true,
@@ -52,6 +53,10 @@ function App() {
             <div>
                 <label>Systolic Blood Pressure: {patient.sbp} mmHg</label><br />
                 <input type="range" min="90" max="200" value={patient.sbp} onChange={e => handleInputChange('sbp', Number(e.target.value))} />
+            </div>
+            <div>
+                <label>eGFR: {patient.egfr} mL/min/1.73m²</label><br />
+                <input type="range" min="15" max="150" value={patient.egfr} onChange={e => handleInputChange('egfr', Number(e.target.value))} />
             </div>
             <div>
                 <label>Diabetes: </label>
