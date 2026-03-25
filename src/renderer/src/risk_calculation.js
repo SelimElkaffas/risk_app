@@ -47,7 +47,7 @@ const BETA_COEFFS = {
 const MGDL_TO_MMOL = 0.02586;
 
 export const calculateRisk = (patient) => {
-    const { age, sex, tChol, hdl, sbp, bmi, egfr, diabetes, smoker, usingAntihtn, usingStatin } = patient;
+    const { age, sex, tChol, hdl, sbp, egfr, diabetes, smoker, usingAntihtn, usingStatin } = patient;
 
     const c = sex === 'female' ? BETA_COEFFS.women : BETA_COEFFS.men;
 
