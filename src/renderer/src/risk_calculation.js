@@ -63,7 +63,7 @@ export const calculateRisk = (patient) => {
     const sbpOver110Scaled = (Math.max(sbp, 110) - 130) / 20;
 
     const egfrUnder60Scaled = (Math.min(egfr, 60) - 60) / -15;
-    const egfrOver60Scaled = (Math.max(egfr, 90) - 60) / -15;
+    const egfrOver60Scaled = (Math.max(egfr, 60) - 90) / -15;
 
     let L = c.constant + 
           (c.age * ageScaled) + 
