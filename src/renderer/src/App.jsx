@@ -155,7 +155,7 @@ function App() {
                     borderRadius: '10px', 
                     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
                 }}>
-                    <h2 style={{ marginTop: 0, color: '#334155' }}>10-Year ASCVD Risk</h2>
+                    <h2 style={{ marginTop: 0, color: '#334155' }}>10-Year CVD Risk</h2>
                     
                     <div style={{ fontSize: '56px', fontWeight: 'bold', color: getRiskColor(risk), marginBottom: '20px' }}>
                         {risk}%
