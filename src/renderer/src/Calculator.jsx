@@ -31,7 +31,7 @@ function Calculator() {
         setPatient({ id, name })
     }
 
-    function handleBaselineButton() {
+    function revertToBaseline() {
         setPatientProfile(baselinePatientProfile)
     }
 
@@ -151,7 +151,7 @@ function Calculator() {
                         Add Snapshot
                     </button>
 
-                    <button onClick={handleBaselineButton} className='secondary-btn'>
+                    <button onClick={revertToBaseline} className='secondary-btn'>
                         Reset to Baseline
                     </button>
                     
